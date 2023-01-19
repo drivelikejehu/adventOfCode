@@ -20,4 +20,4 @@ for (let j = 0; j < arr.length; j++) {
     }
 }
 
-console.log("winner of most calories: ", mostCal)
+console.log("the most calories: ", mostCal)
