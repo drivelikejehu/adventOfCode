@@ -4,8 +4,6 @@ var arr = []
 var arr2 = []
 var total = 0
 
-console.log(list)
-
 for (let i = 0; i < list.length; i++) {
     arr2.push(list[i])
     if (i > 0 && i % 2 === 1) {
@@ -13,8 +11,6 @@ for (let i = 0; i < list.length; i++) {
         arr2 = []
     }
 }
-
-console.log(arr)
 
 for (let i = 0; i < arr.length; i++) {
     if (arr[i][0] === 'A') {
@@ -46,4 +42,4 @@ for (let i = 0; i < arr.length; i++) {
     }
 }
 
-console.log('total', total)
+console.log('new total', total)
