@@ -3,6 +3,7 @@ var list = fs.readFileSync('input.txt', 'utf-8').split("\n")
 var ruckSacks = []
 var commonLetters = []
 var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+var total = 0;
 
 for (let i = 0; i < list.length; i++) {
     let arr = []
@@ -25,5 +26,19 @@ for (let j = 0; j < ruckSacks.length; j++) {
         commonLetters.push(res[0])
 }
 
-// console.log("common letters: ", commonLetters)
+console.log("common letters: ", commonLetters)
 // console.log('alphabet: ', alphabet)
+
+// comparing commonLetters array against alphabet
+for (let i = 0; i < commonLetters.length; i++) {
+    // console.log(commonLetters[i])
+    for (let j = 0; j < alphabet.length; j++) {
+        if (commonLetters[i] === alphabet[j]) {
+            total += j + 1
+        } else if (commonLetters[i] === alphabet[j].toUpperCase()) {
+            total += j + 1 + 26
+        }
+    }
+}
+
+console.log("the total: ", total)
