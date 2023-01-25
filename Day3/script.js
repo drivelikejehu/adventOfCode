@@ -2,6 +2,7 @@ var fs = require('fs')
 var list = fs.readFileSync('input.txt', 'utf-8').split("\n")
 var ruckSacks = []
 var commonLetters = []
+var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 
 for (let i = 0; i < list.length; i++) {
     let arr = []
@@ -24,4 +25,5 @@ for (let j = 0; j < ruckSacks.length; j++) {
         commonLetters.push(res[0])
 }
 
-console.log("common letters: ", commonLetters)
+// console.log("common letters: ", commonLetters)
+// console.log('alphabet: ', alphabet)
