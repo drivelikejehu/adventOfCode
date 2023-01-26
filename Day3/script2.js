@@ -29,8 +29,8 @@ for (let j = 0; j < elfGroups.length; j++) {
 // comparing badges array against alphabet
 for (let i = 0; i < badges.length; i++) {
     for (let j = 0; j < alphabet.length; j++) {
+        // position of lowercase alphabet
         if (badges[i] === alphabet[j]) {
-            // position of lowercase alphabet
             total += j + 1
         } else if (badges[i] === alphabet[j].toUpperCase()) {
             total += j + 1 + 26

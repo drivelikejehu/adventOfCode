@@ -32,8 +32,8 @@ console.log("common letters: ", commonLetters)
 // comparing commonLetters array against alphabet
 for (let i = 0; i < commonLetters.length; i++) {
     for (let j = 0; j < alphabet.length; j++) {
+        // position of lowercase alphabet
         if (commonLetters[i] === alphabet[j]) {
-            // position of lowercase alphabet
             total += j + 1
         } else if (commonLetters[i] === alphabet[j].toUpperCase()) {
             total += j + 1 + 26
