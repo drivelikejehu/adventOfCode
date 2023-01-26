@@ -2,7 +2,7 @@ var fs = require('fs')
 var list = fs.readFileSync('input.txt', 'utf-8').split("\n")
 var ruckSacks = []
 var commonLetters = []
-var alphabet = "abcdefghijklmnopqrstuvwxyz".split("''");
+var alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 var total = 0;
 
 for (let i = 0; i < list.length; i++) {
