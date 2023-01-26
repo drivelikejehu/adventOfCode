@@ -2,7 +2,7 @@ var fs = require('fs')
 var list = fs.readFileSync('input.txt', 'utf-8').split("\n")
 var ruckSacks = []
 var commonLetters = []
-var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+var alphabet = "abcdefghijklmnopqrstuvwxyz".split("''");
 var total = 0;
 
 for (let i = 0; i < list.length; i++) {
@@ -31,9 +31,9 @@ console.log("common letters: ", commonLetters)
 
 // comparing commonLetters array against alphabet
 for (let i = 0; i < commonLetters.length; i++) {
-    // console.log(commonLetters[i])
     for (let j = 0; j < alphabet.length; j++) {
         if (commonLetters[i] === alphabet[j]) {
+            // position of lowercase alphabet
             total += j + 1
         } else if (commonLetters[i] === alphabet[j].toUpperCase()) {
             total += j + 1 + 26
