@@ -13,7 +13,7 @@ for (let i = 0; i < list.length; i += 3) {
     elfGroups.push(arr)
 }
 
-// console.log("elf groups: ", elfGroups)
+console.log("elf groups: ", elfGroups)
 
 // finding the common letter in each group
 for (let j = 0; j < elfGroups.length; j++) {
@@ -24,7 +24,7 @@ for (let j = 0; j < elfGroups.length; j++) {
     badges.push(res[0])
 }
 
-// console.log("common letters: ", badges)
+console.log("common letters: ", badges)
 
 
 // Lowercase item types a through z have priorities 1 through 26.

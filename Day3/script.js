@@ -5,6 +5,8 @@ var commonLetters = []
 var alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 var total = 0;
 
+console.log("the list: ", list)
+
 for (let i = 0; i < list.length; i++) {
     let arr = []
     let ruckSack = list[i]
@@ -16,7 +18,7 @@ for (let i = 0; i < list.length; i++) {
     ruckSacks.push(arr)
 }
 
- // console.log("RuckSacks: ", ruckSacks)
+console.log("RuckSacks: ", ruckSacks)
 
 // finding the common letter in each string
 for (let j = 0; j < ruckSacks.length; j++) {
@@ -27,8 +29,8 @@ for (let j = 0; j < ruckSacks.length; j++) {
         commonLetters.push(res[0])
 }
 
-// console.log("common letters: ", commonLetters)
-// console.log('alphabet: ', alphabet)
+ console.log("common letters: ", commonLetters)
+ console.log('alphabet: ', alphabet)
 
 
 // Lowercase item types a through z have priorities 1 through 26.
@@ -40,12 +42,12 @@ for (let j = 0; j < ruckSacks.length; j++) {
 for (let i = 0; i < commonLetters.length; i++) {
     for (let j = 0; j < alphabet.length; j++) {
         // position of lowercase alphabet
-        if (commonLetters[i] === alphabet[j]) {
+        if (commonLetters[i] == alphabet[j]) {
             total += j + 1
-        } else if (commonLetters[i] === alphabet[j].toUpperCase()) {
+        } else if (commonLetters[i] == alphabet[j].toUpperCase()) {
             total += j + 1 + 26
         }
     }
 }
 
-// console.log("the total: ", total)
+console.log("the total: ", total)
